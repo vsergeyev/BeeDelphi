@@ -12,3 +12,26 @@ IDE for Python learners
 .. _`Briefcase`: https://github.com/beeware/briefcase
 .. _`The BeeWare Project`: https://beeware.org/
 .. _`becoming a financial member of BeeWare`: https://beeware.org/contributing/membership
+
+
+Setup Development Environment
+-----------------------------
+
+    mkdir beedelphi
+    cd beedelphi
+    python3 -m venv venv
+    source ./venv/bin/activate
+    pip install briefcase
+
+Next step - fork BeeDelphi repo to your account on GitHub. And clone it to the local directory.
+For me it look like:
+
+    git clone git@github.com:vsergeyev/BeeDelphi.git
+
+Let check if everything is correct, and run app in dev  mode:
+
+    cd beedelphi
+    briefcase dev
+
+Have fun!
+---------
