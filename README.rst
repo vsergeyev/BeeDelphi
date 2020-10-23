@@ -16,6 +16,7 @@ IDE for Python learners
 
 Setup Development Environment
 -----------------------------
+::
 
     mkdir beedelphi
     cd beedelphi
@@ -25,10 +26,12 @@ Setup Development Environment
 
 Next step - fork BeeDelphi repo to your account on GitHub. And clone it to the local directory.
 For me it look like:
+::
 
     git clone git@github.com:vsergeyev/BeeDelphi.git
 
 Let check if everything is correct, and run app in dev  mode:
+::
 
     cd beedelphi
     briefcase dev
