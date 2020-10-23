@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Bee Delphi IDE"
+bundle = "com.vsergeyev.beedelphi"
+version = "0.0.1"
+url = "https://github.com/vsergeyev/BeeDelphi"
+license = "MIT license"
+author = 'Volodymyr Sergeyev'
+author_email = "vova.sergeyev@gmail.com"
+
+[tool.briefcase.app.beedelphi]
+formal_name = "Bee Delphi IDE"
+description = "IDE for Python learners"
+icon = "src/beedelphi/resources/beedelphi"
+sources = ['src/beedelphi']
+requires = []
+
+
+[tool.briefcase.app.beedelphi.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.beedelphi.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.beedelphi.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.beedelphi.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.beedelphi.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
